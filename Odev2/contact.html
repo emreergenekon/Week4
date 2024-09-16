@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Contact Us</title>
+</head>
+
+<body>
+<!-- Contact Sayfası -->
+<section class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
+    <h1 class="text-4xl font-bold mb-8">Contact Us</h1>
+    
+    <form class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
+        <!-- Name Alanı -->
+        <div class="mb-6">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+        </div>
+
+        <!-- E-mail Alanı -->
+        <div class="mb-6">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Your E-mail" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+        </div>
+
+        <!-- Message Alanı -->
+        <div class="mb-6">
+            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+        </div>
+
+        <!-- Send Butonu -->
+        <div class="text-center">
+            <button type="submit" class="bg-purple-400 text-white py-3 px-6 rounded-lg hover:bg-purple-500">Send</button>
+        </div>
+    </form>
+</section>
+
+
+    
+</body>
+</html>
