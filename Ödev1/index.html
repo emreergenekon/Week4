@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Tailwind Odev1</title>
+
+    <style>
+        .image-wrapper {
+            width: 438.5px;
+            height: 356px;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container-wrapper {
+            width: 438.5px;
+            height: 356px;
+            border-radius: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 16px;
+            background-color: white;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-gray-800"> Week-4 | Ödev-1</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Info</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Story</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+                    <a href="#" class="text-gray-600 bg-blue-500 hover:bg-blue-300 text-gray-900 px-4 rounded-lg flex items-center">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+    <section class="flex-1 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="container-wrapper mx-auto">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-2 text-center">Build with Patika</h1>
+                    <h2 class="text-xl text-gray-600 mb-6 text-center">Patika ile istediğin şekilde siteni şekillendir!</h2>
+                    <form class="space-y-4 w-full">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">İsim Soyisim</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm" required>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Join the Waitlist</button>
+                    </form>
+                </div>
+
+                <div class="image-wrapper mx-auto">
+                    <img src="gorsel1.png" alt="Kare Resim">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt İçerik -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h4 class="text-purple-400 text-xl mb-4">Nasıl Çalışır?</h4>
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Patika ile Çok Kolay!</h1>
+
+            <div class="flex justify-center gap-6">
+                <div class="bg-white p-6 shadow-md rounded-lg flex-1 max-w-xs">
+                    <div class="text-purple-500 text-2xl font-bold mb-2">01</div>
+                    <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg flex-1 max-w-xs">
+                    <div class="text-purple-500 text-2xl font-bold mb-2">02</div>
+                    <p class="text-black">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg flex-1 max-w-xs">
+                    <div class="text-purple-500 text-2xl font-bold mb-2">03</div>
+                    <p class="text-black">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alt İçerik -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Sol Taraf: Görsel -->
+                <div class="image-wrapper mx-auto">
+                    <img src="gorsel2.png" alt="Görsel">
+                </div>
+                <!-- Sağ Taraf: Metin ve Yazar Ismi -->
+                <div class="text-center md:text-left">
+                    <p class="italic text-gray-800 mb-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                    <p class="text-gray-600">Emre Ergenekon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2024 Emre Ergenekon. Tüm hakları saklıdır.</p>
+            <div class="mt-2">
+                <a href="#" class="text-gray-400 hover:text-gray-300 mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-gray-300 mx-2">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-gray-300 mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
